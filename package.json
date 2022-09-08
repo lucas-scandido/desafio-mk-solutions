@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "cypress": "^10.7.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mailosaur": "^2.12.0"
+  }
+}
