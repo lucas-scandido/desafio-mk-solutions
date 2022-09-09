@@ -1,6 +1,6 @@
-describe ('Cadastro Válido', () => {
-  it('Etapa 01 - Usuario', () =>{
-      cy.visit('http://nextlab.mksolutions.com.br:4000/register')
+describe ('Valid Signup', () => {
+  it('Step 01 - User', () =>{
+      cy.visit('/register')
 
       var usuario = {
           email: 'luccas.candido@outlook.com',
@@ -16,7 +16,7 @@ describe ('Cadastro Válido', () => {
           
     })
 
-    it('Etapa 02 - Validação', () => {
+    it('Step 02 - Validation', () => {
       //Para a automação desta etapa tentei utilizar as bibliotecas MailoSaur e MailSlurp para a obtenção do código de verificação automático
       //porém não obtive sucesso a tempo. Portanto, esta etapa de colocar o código de confirmação, ficou manual,
       //por isso o delay na ultima etapa, que seria o tempo necessario de copiar o código enviado pelo email e colar manualmente.
@@ -25,7 +25,7 @@ describe ('Cadastro Válido', () => {
 
     })
 
-    it('Etapa 03 - Empresa', () =>{
+    it('Step 03 - Company', () =>{
         var empresa = {
             cnpj: 'luccas.candido@outlook.com',
             razaoSocial: 'Lucas da Silva Candido',
@@ -53,7 +53,7 @@ describe ('Cadastro Válido', () => {
 
     })
 
-    it('Etapa 04 - Documentos', () =>{      
+    it('Step 04 - Files', () =>{      
       
       const expectedMessage = 'Enviado'
       
@@ -70,7 +70,7 @@ describe ('Cadastro Válido', () => {
       cy.get('.sc-faIbUi > .jmdoSl').click()
   })
 
-    it('Etapa 05 - Confirmação', () => {
+    it('Step 06 - Confirmation', () => {
       
       const expectedMessage = 'Sua conta foi cadastrada com sucesso!'
       

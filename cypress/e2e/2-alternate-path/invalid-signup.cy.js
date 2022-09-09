@@ -1,6 +1,6 @@
-describe ('Cadastro Inválido', () => {
+describe ('Invalid Signup', () => {
 
-  it('Etapa 01 - Usuario Inválido', () =>{
+  it('Step 01 - Invalid User', () =>{
     //Tentativa de prosseguir com o cadastro sem preencher os campos deverá ser exibido mensagem de campos obrigatorios.
     cy.visit('http://nextlab.mksolutions.com.br:4000/register')
 
